@@ -21,3 +21,37 @@ Desafios:
 
 10.Agora, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".
  */
+
+// desafio 01
+alert('Bem-vindo ao nosso site!');
+
+// desafio 02
+//let nome = "Lua";
+
+// desafio 03
+//let idade = 25;
+
+// desafio 04
+let numeroDeVendas = 50;
+
+// desafio 05
+let saldoDisponivel = 1000;
+
+// desafio 06
+alert('Erro! Preencha todos os campos');
+
+// desafio 07
+let mensagemDeErro = 'Erro! Preencha todos os campos';
+alert(mensagemDeErro);
+
+// desafio 08
+let nome = prompt('Digite o seu nome');
+
+// desafio 09
+//let idade = prompt('Digite a sua idade');
+
+// desafio 10
+let idade = prompt('Digite a sua idade');
+if(idade >=18){
+    alert('Pode tirar habilitação!')
+}
