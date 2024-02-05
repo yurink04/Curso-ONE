@@ -70,5 +70,10 @@ function reiniciarJogo(){
     limparCampo();//limpa o campo
     tentativas=1;//zera tentativas
     mensagemInicial();//exibe mensagem inicial
-    document.getElementById('reiniciar').setAttribute('disabled', true);
+    document.getElementById('reiniciar').setAttribute('disabled', true); //funçao que seta atributo no elemento HTML
 }
+
+//array = listas
+//criando listas em java script
+
+
