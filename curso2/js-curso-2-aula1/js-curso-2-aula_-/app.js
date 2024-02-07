@@ -1,5 +1,6 @@
 //manipulando HTML com javascript - anotacao1
-
+let listaDeNumerosSorteados = []; // é de boa prática declarar as listas no começo do código
+let numeroLimite = 10;
 let numeroSecreto = gerarRandomNum();
 let tentativas = 1;
 /*
@@ -20,6 +21,8 @@ paragrafo.innerHTML = ('Escolha um número entre 1 e 10');
 function exibirTextoNaTela(tag, texto){ //declarando quais campos a função irá modificar no HTML 
     let campo = document.querySelector(tag); //chamando o campo 
     campo.innerHTML = texto; //declarando o que o campo irá receber
+    resposiveVoice.speak(texto, 'Brazilian Portuguese Female',
+    {rate:1.2});
 }
 
 function mensagemInicial(){
@@ -57,7 +60,20 @@ function verificarChute(){ //responsável por determinar uma ação para parte d
 }
 
 function gerarRandomNum() {
-    return parseInt(Math.random() * 10 + 1)
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length; // verifica a quantidade de elementos que foram declarados na lista 
+
+    if (quantidadeDeElementosNaLista == 3){
+        listaDeNumerosSorteados=[];
+    }
+    if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+        return gerarRandomNum; /*o código irá verificar se o número escolhido já foi chamado, caso sim, chamará outro.
+        O detalhe é que esse comando apenas verifica e chama outro, caso todos os números sejam chamados, ele não chamará mais */
+    }else{
+        listaDeNumerosSorteados.push(numeroEscolhido) //o push adiciona o elemento no final da lista
+        console.log(listaDeNumerosSorteados);
+        return numeroEscolhido;
+    }
 }
 
 function limparCampo(){ //declarando a função
@@ -72,8 +88,8 @@ function reiniciarJogo(){
     mensagemInicial();//exibe mensagem inicial
     document.getElementById('reiniciar').setAttribute('disabled', true); //funçao que seta atributo no elemento HTML
 }
-
-//array = listas
+//array = listas - anotacao2
 //criando listas em java script
 
 
+//pesquisar sobre responsive voice

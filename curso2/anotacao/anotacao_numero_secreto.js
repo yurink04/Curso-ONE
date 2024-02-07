@@ -29,3 +29,10 @@ Portanto, o objeto `document` é uma parte essencial da interação do JavaScrip
 (3) Noções básicas de JavaScript - Aprendendo desenvolvimento web | MDN. https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics.
 (4) Objeto document: DOM em JavaScript (Modelo de Objeto de Documentos). https://www.javascriptprogressivo.net/2019/01/DOM-Modelo-Objeto-Documentos.html.
  */
+
+alert('anotação3')
+/**
+ Para se criar listas, usa-se o conceito da variável, porém receberá os atributos entre [].
+ Ao declarar uma lista, você pode chama-la para ser exibida, contada, modificada, etc.
+ Os elementos de uma lista são localizados através do índice. Ele é contado a partir da posição zero.
+ */
