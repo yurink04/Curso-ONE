@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <!--criando link para css com emmet: link:css > enter-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Emmet Abbreviation - Atalhos de produtividade</h1>
+
+    <h2>Inserindo atributos ou elementos nas tags</h2>
+    <p>
+        Para inserir um atributo ou elemento durante a criação de uma TAG com abreviação Emmet, é necessário usar >. Por exemplo: <br>
+        Ao criar uma lista, para declarar os iten dela: <br>
+        *ol>li* <br>
+        Ao criar uma DIV, para inserir um h1 ou p: <br>
+        *div>h1* <br>
+        Ao criar uma lista com href: <br>
+        *ul>(li>a{conteúdo$})* <br>
+
+    </p>
+    <h2>Inserindo conteúdo nas tags</h2>
+    <p>
+        Para inserir conteúdo nos atribus das tags, usa-se {}. Por exemplo: <br>
+        Ao criar uma lista com itens, para declara seu contéudo: <br>
+        *ol>li{Aqui eu posso colocar conteúdo}* <br>
+        Ao criar uma div, para declarar h1 ou p: <br>
+        *div>h1{Aqui eu posso colocar conteúdo}* <br>
+        Ao criar uma lista com link, para declarar seu conteúdo: <br>
+        *ul>(li>a{conteúdo$}[href:"http:link.com/conteúdo-$"])*
+    </p>
+    
+    <h2>Criando listas com Emmet</h2>
+
+    <!--criando lista com emmet: ol>li*5-->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <!--criando lista com emmet com conteúdo: ol>li{conteúdo$}*5-->
+    <ol>
+        <li>conteúdo1</li>
+        <li>conteúdo2</li>
+        <li>conteúdo3</li>
+        <li>conteúdo4</li>
+        <li>conteúdo5</li>
+    </ol>
+    <!-- criando listas com atributo href: ul>(li>a{conteúdo$})-->
+    <ul>
+        <li><a href="">conteúdo1</a></li>
+        <li><a href="">conteúdo2</a></li>
+        <li><a href="">conteúdo3</a></li>
+    </ul>
+    <!--criando listas com contéudo no href: ul>(li>a{conteúdo$}[href:"http:link.com/conteúdo-$"])*3-->
+    <ul>
+        <li><a href="" href:="">conteúdo1</a></li>
+        <li><a href="" href:="">conteúdo2</a></li>
+        <li><a href="" href:="">conteúdo3</a></li>
+        <li><a href="" href:="">conteúdo4</a></li>
+    </ul>
+
+    <h2>Criando DIVS com Emmet</h2>
+
+    <!--criando divs com classe com emmet: dov.classe-um.classe-dois || Usa-se ponto para clase-->
+    <div class="clase-um classe-dois">Aqui eu posso colocar o conteúdo. Foi criado uma div com duas classes.</div>
+    <!--criando div com id com emmet: div#meuid || Usa-se cerquilha para criação de id-->
+    <div id="meuid">Aqui eu posso colocar o conteúdo. Foi criado uma div com id.</div>
+    <!--criando div com id e com classe com emmet || Usa-se cerquilha e ponto, nesta ordem, para criar esta div-->
+    <div id="meuid" class="minhaclasse">Aqui eu posso colocar o conteúdo. Foi criado uma div com id e classe.</div>
+    <!-- criando div com id, com clase e com conteúdo com emmet || Usa-se cerquilha, ponto e chave, nesta ordem, para criar esta div
+    div#meuid.minhaclasse{Aqui eu posso colocar o conteúdo. Foi criado uma div com id, clase e conteúdo.}-->
+    <div id="meuid" class="minhaclasse">Aqui eu posso colocar o conteúdo. Foi criado uma div com id, clase e conteúdo.</div>
+    <!--criando mais de uma div: div#$.minhaclasse{Aqui eu posso colocar o conteúdo $. Foi criado uma div com id, clase e conteúdo.}*6
+    Ao colocar cifrão nas tags, cria-se atribuição ou elementos automáticos-->
+    <div id="meuid1" class="minhaclasse">Aqui eu posso colocar o conteúdo 1. Foi criado uma div com id, clase e conteúdo.</div>
+    <div id="meuid2" class="minhaclasse">Aqui eu posso colocar o conteúdo 2. Foi criado uma div com id, clase e conteúdo.</div>
+    <div id="meuid3" class="minhaclasse">Aqui eu posso colocar o conteúdo 3. Foi criado uma div com id, clase e conteúdo.</div>
+    <div id="meuid4" class="minhaclasse">Aqui eu posso colocar o conteúdo 4. Foi criado uma div com id, clase e conteúdo.</div>
+    <div id="meuid5" class="minhaclasse">Aqui eu posso colocar o conteúdo 5. Foi criado uma div com id, clase e conteúdo.</div>
+    <div id="meuid6" class="minhaclasse">Aqui eu posso colocar o conteúdo 6. Foi criado uma div com id, clase e conteúdo.</div>
+    <!--criando uma div com clase, que possui filho H1 com contéudo, um imrão P com conteúdo, um a para o p com conteúdo e um irmão do a, que será continuação do Texto do p.
+        Para criar filhos, usa-se > - atributos.
+        Para criar irmãos, usa-se + - criação de atributos após o primeiro.
+        Para criar conteúdo, usa-se {} - insere conteúdo nos atributos.
+
+        Ao criar h1 nesta div, utilizou-se >, pois trata-se do primeiro atributo, filho da div. O p trata-se da mesma natureza que h1, sendo irmão. Por isso, utiliza-se +. 
+        o A trata-se de um atributo do p, por isso utiliza-se >. Como o p possui conteúdo, a possui contéudo e eu quero continuar o conteúdo de p após inserir a, utilizo +, 
+        pois esse conteúdo trata-se de um irmão do contéudo de p
+    div#meuid.minhaclase>h1{Aqui eu posso colocar contéudo.}+(p{Aqui eu posso colocar contéudo}>a{Clique aqui}+{Clique aqui para saber mais.})*2-->
+    <div id="meuid" class="minhaclase">
+        <h1>Aqui eu posso colocar contéudo.</h1>
+        <p>Aqui eu posso colocar contéudo<a href="">Clique aqui</a>Clique aqui para saber mais.</p>
+        <p>Aqui eu posso colocar contéudo<a href="">Clique aqui</a>Clique aqui para saber mais.</p>
+    </div>
+        </p>
+    </div>
+</body>
+</html>

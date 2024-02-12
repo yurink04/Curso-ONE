@@ -11,7 +11,7 @@ para manipular -  anotacao2
 
 //querySelector define que parte vamos manipular do HTML
 titulo.innerHTML = ('Jogo do Número Secreto '); //innerHTML é uma propriedade do objeto ELEMENT que permite obter ou definir 
-o conteudo HTML de um elemento
+o conteudo HTML de um elemento 
 
 let paragrafo = document.querySelector('p');
 paragrafo.innerHTML = ('Escolha um número entre 1 e 10');
@@ -21,8 +21,7 @@ paragrafo.innerHTML = ('Escolha um número entre 1 e 10');
 function exibirTextoNaTela(tag, texto){ //declarando quais campos a função irá modificar no HTML 
     let campo = document.querySelector(tag); //chamando o campo 
     campo.innerHTML = texto; //declarando o que o campo irá receber
-    resposiveVoice.speak(texto, 'Brazilian Portuguese Female',
-    {rate:1.2});
+    resposiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function mensagemInicial(){
