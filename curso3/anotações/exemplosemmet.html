@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Emmet Abbreviation - Atalhos de produtividade</h1>
-
+    
     <h2>Inserindo atributos ou elementos nas tags</h2>
     <p>
         Para inserir um atributo ou elemento durante a criação de uma TAG com abreviação Emmet, é necessário usar >. Por exemplo: <br>
@@ -43,6 +43,7 @@
         <li></li>
         <li></li>
     </ol>
+   
     <!--criando lista com emmet com conteúdo: ol>li{conteúdo$}*5-->
     <ol>
         <li>conteúdo1</li>
@@ -51,12 +52,14 @@
         <li>conteúdo4</li>
         <li>conteúdo5</li>
     </ol>
+   
     <!-- criando listas com atributo href: ul>(li>a{conteúdo$})-->
     <ul>
         <li><a href="">conteúdo1</a></li>
         <li><a href="">conteúdo2</a></li>
         <li><a href="">conteúdo3</a></li>
     </ul>
+  
     <!--criando listas com contéudo no href: ul>(li>a{conteúdo$}[href:"http:link.com/conteúdo-$"])*3-->
     <ul>
         <li><a href="" href:="">conteúdo1</a></li>
@@ -69,13 +72,17 @@
 
     <!--criando divs com classe com emmet: dov.classe-um.classe-dois || Usa-se ponto para clase-->
     <div class="clase-um classe-dois">Aqui eu posso colocar o conteúdo. Foi criado uma div com duas classes.</div>
+    
     <!--criando div com id com emmet: div#meuid || Usa-se cerquilha para criação de id-->
     <div id="meuid">Aqui eu posso colocar o conteúdo. Foi criado uma div com id.</div>
+   
     <!--criando div com id e com classe com emmet || Usa-se cerquilha e ponto, nesta ordem, para criar esta div-->
     <div id="meuid" class="minhaclasse">Aqui eu posso colocar o conteúdo. Foi criado uma div com id e classe.</div>
+  
     <!-- criando div com id, com clase e com conteúdo com emmet || Usa-se cerquilha, ponto e chave, nesta ordem, para criar esta div
     div#meuid.minhaclasse{Aqui eu posso colocar o conteúdo. Foi criado uma div com id, clase e conteúdo.}-->
     <div id="meuid" class="minhaclasse">Aqui eu posso colocar o conteúdo. Foi criado uma div com id, clase e conteúdo.</div>
+    
     <!--criando mais de uma div: div#$.minhaclasse{Aqui eu posso colocar o conteúdo $. Foi criado uma div com id, clase e conteúdo.}*6
     Ao colocar cifrão nas tags, cria-se atribuição ou elementos automáticos-->
     <div id="meuid1" class="minhaclasse">Aqui eu posso colocar o conteúdo 1. Foi criado uma div com id, clase e conteúdo.</div>
@@ -84,6 +91,7 @@
     <div id="meuid4" class="minhaclasse">Aqui eu posso colocar o conteúdo 4. Foi criado uma div com id, clase e conteúdo.</div>
     <div id="meuid5" class="minhaclasse">Aqui eu posso colocar o conteúdo 5. Foi criado uma div com id, clase e conteúdo.</div>
     <div id="meuid6" class="minhaclasse">Aqui eu posso colocar o conteúdo 6. Foi criado uma div com id, clase e conteúdo.</div>
+  
     <!--criando uma div com clase, que possui filho H1 com contéudo, um imrão P com conteúdo, um a para o p com conteúdo e um irmão do a, que será continuação do Texto do p.
         Para criar filhos, usa-se > - atributos.
         Para criar irmãos, usa-se + - criação de atributos após o primeiro.
