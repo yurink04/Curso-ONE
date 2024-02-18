@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: #F6F6F6;
+    font-family: Arial, Helvetica, sans-serifup;
 }
 strong{
     color: #22d4fd;
@@ -10,4 +11,12 @@ img{
     height: auto;
     position: absolute;
     right: 600px;
+}
+title1{
+    margin-bottom: 14px;
+    margin-top: 60px;
+}
+img1{
+    margin-bottom: 14px;
+    margin-top: 60px;
 }
