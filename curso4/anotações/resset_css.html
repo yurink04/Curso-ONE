@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset CSS: O que é, exemplos, como criar e usar</title>
+    <link rel="stylesheet" href="stylecaixa.css"> 
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Reset CSS: O que é?</h1>
+        <p>
+            O Reset.CSS ou o CSS Reset, é uma técnica ou conjuntos de estilos CSS projetados para normalizaro estilo padrão dos elementos
+            HTML em todos os navegadores da web. <br>
+            O objetivo é criar uma base consistente e previsível para o desenvolvimento web, independentemente das variações de estilo padrão
+            entre diferentes navegadores.
+        </p>
+        <p>
+            O Reset CSS ajusta o layout, resetando tags que possuíam valores iniciais (que ocasionavam uma pré-formatação), nos retornando um
+            estilo básico em tags como <i>h1, a, body</i> e etc.
+            Esta técnica suaviza as diferenças e padroniza a estilização, sobrepondo a formatação original dos browsers com uma folha de esilo.
+        </p>
+        <h2>Como criar o Reset CSS?</h2>
+        <p>
+            Para reduzirmos as formatações originais entre os navegadores, é preciso selecionar todas as tags e adicionar sobre elas os resets,
+            como <i>margin, padding, border</i> e etc.
+        </p>
+        <p>
+            A formatação deve ser criada de acordo com a necessidade do seu projeto, ou pode ser utilizado algum reset já pronto. <br>
+            Um dos mais utilizados e conhecidos foi desenvolvido por Eric Meyer. No seu <a href="https://meyerweb.com/eric/tools/css/reset/">blog</a>,
+            onde ele explica um pouco sobre a técnica e como desenvolveu o seu código reset.
+        </p>
+        <p>
+            <div class="caixa">
+                <u>http://meyerweb.com/eric/tools/css/reset/</u><br>
+                <i>v2.0 | 20110126</i><br>
+                <i>License: none (public domain)</i>
+            </div>
+        </p>
+        <P><i>
+           <div class="caixa">
+            html, body, div, span, applet, object, iframe,<br>
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,<br>
+            a, abbr, acronym, address, big, cite, code,<br>
+            del, dfn, em, img, ins, kbd, q, s, samp,<br>
+            small, strike, strong, sub, sup, tt, var,<br>
+            b, u, i, center,<br>
+            dl, dt, dd, ol, ul, li,<br>
+            fieldset, form, label, legend,<br>
+            table, caption, tbody, tfoot, thead, tr, th, td,<br>
+            article, aside, canvas, details, embed,<br>
+            figure, figcaption, footer, header, hgroup,<br> 
+            menu, nav, output, ruby, section, summary,<br>
+            time, mark, audio, video {<br>
+                margin: 0;<br>
+                padding: 0;<br>
+                border: 0;<br>
+                font-size: 100%;<br>
+                font: inherit;<br>
+                vertical-align: baseline;<br>
+                                    }<br>
+           </div><br>
+           <div class="caixa">
+            /* HTML5 display-role reset for older browsers */<br>
+            article, aside, details, figcaption, figure, <br>
+            footer, header, hgroup, menu, nav, section {<br>
+                display: block;<br>
+                                }<br>
+            body {<br>
+                line-height: 1;<br>
+                                }  <br> 
+            ol, ul {<br>
+                list-style: none;<br>
+                                }<br>
+            blockquote, q {<br>
+                quotes: none;<br>
+                                }<br>
+            blockquote:before, blockquote:after,<br>
+                q:before, q:after {<br>
+                    content: '';<br>
+                    content: none;<br>
+                                }<br>
+            table {<br>
+                border-collapse: collapse;<br>
+                border-spacing: 0;<br>
+                                }<br>
+            
+           </div>
+        </i></p>
+        <p>
+            Note que existem algumas tags que são dividas em grupos, que recebem valores genéricos, como <b>margin:</b> 0, <b>border:</b> 0
+            <B>padding:</B> 0 e outras que precisam de valores específicos, como:
+            <div class="caixa">
+                ol, ul {
+                    list-style: none;
+                }
+            </div>
+        </p>
+    </main>
+    <footer></footer>
+</body>
+</html>

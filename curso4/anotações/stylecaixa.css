@@ -1,0 +1,12 @@
+body{
+    background-color: #F1FADA;
+}
+main{
+    background-color: #B5C0D0;
+}
+.caixa{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #CCD3CA;
+}
