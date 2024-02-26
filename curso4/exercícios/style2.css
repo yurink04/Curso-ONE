@@ -1,0 +1,13 @@
+.texto-destaque{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    color: red;
+}
+.titulo-blog{
+    margin: 10;
+    padding: 0;   
+    background-color: brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
