@@ -1,26 +1,58 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');  /*código para importação de fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{ /*rest css*/
     margin: 0;
     padding: 0;
+    
 }
-body{
+body{ /*personalizaçao*/
     background-color: black;
     color: #F6F6F6;
     font-family: Arial, Helvetica, sans-serifup;
+    height: 100vh;
 }
-.titulo-destaque{
+.titulo-destaque{ /*estilização*/
     color: #22d4fd;
 }
-img{
+img{ /*formatação de imagem e estilização*/
+    box-sizing: border-box; 
     width: 500px;
-    height: auto;
-    position: absolute;
-    right: 600px;
+    height: 500px;
 }
-title1{
-    margin-bottom: 14px;
-    margin-top: 60px;
+.container{ /*flexbox e estilização*/
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    }
+.apresentacao__conteudo{ /*estilização e flexbox*/
+    width: 700px ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*espaçamento entre filhos*/
 }
-img1{
-    margin-bottom: 14px;
-    margin-top: 60px;
+.apresentacao__titulo{
+    font-size: 36px;
+    margin-bottom: 5%;
+    font-family: 'Krona-One', sans-serif;
+}
+.apresentacao__links{ /*flexbox*/
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__links__link{ /*estilização*/
+    background-color: #22d4fd;
+    width: 280px;
+    font-size: 24px;
+    font-weight: 600px;
+    text-align: center;
+    border-radius: 16px; /* raio de arredondamento da borda*/
+    padding: 21.5px 0px; /* propriedade que define o espaçamento entre o conteudo de um elelemento e suas bordas. É possível colocar as dimensões vertical e horizontal, nesta ordem.*/
+    text-decoration: none; /*retira o sublinhado do hiperlink*/
+    color: black;
+    font-family: "Montserrat", sans-serif;
+
 }
