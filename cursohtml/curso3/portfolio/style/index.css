@@ -8,6 +8,7 @@
 }
 body{ /*personalizaçao*/
     background-color: black;
+    background-size: 100%;
     color: #F6F6F6;
     font-family: Arial, Helvetica, sans-serifup;
     height: 100vh;
