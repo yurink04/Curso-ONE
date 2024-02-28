@@ -55,6 +55,7 @@ img{ /*formatação de imagem e estilização*/
     display: flex;
     flex-direction: column;
     gap: 40px; /*espaçamento entre filhos*/
+    
 }
 .apresentacao__links__subtitulo{
     font-family: 'Krona One', sans-serif;
