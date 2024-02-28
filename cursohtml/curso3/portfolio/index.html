@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--auxilia na navegação de usuários EDGE ou IE para a versão mais recente do navegador-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--cria responsividade de escala da página de acordo com o dispositivo que acessa a página-->
     <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css"> <!--puxando css para o HTML-->
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-    <header></header> <!--cabeçalho da página-->
-    <main class="container"><!--corpo da página-->
-        <section class="apresenta__conteudo">
+    <header>
+        <div>
+            <iframe class="header" src="header.html" frameborder="0"></iframe>
+        </div>
+    </header>
+    <main class="apresentacao"><!--corpo da página-->
+        <section class="apresentacao__conteudo">
             <h1 class="apresentacao__titulo">
             Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong>
             </h1>
@@ -20,15 +24,26 @@
         </p>
        <div class="apresentacao__links">
         <h2 class="apresentacao__links__subtitulo">Acesse minhas redes: </h2>
-        <a class="apresentacao__links__link" href="https://github.com/yurink04">GitHub</a>
-        <a class="apresentacao__links__link" href="https://www.linkedin.com/in/samuel-yuri/">LinkedIn</a>
+        <a class="apresentacao__links__link" href="https://github.com/yurink04" target="_blank">
+            <img src="assets/github.png"github alt="logo github" class="apresentacao__links_link_logos">
+            GitHub
+        </a>
+        <a class="apresentacao__links__link" href="https://www.linkedin.com/in/samuel-yuri/" target="_blank">
+            <img src="assets/instagram.png" alt="logo instagram" class="apresentacao__links_link_logos">
+            LinkedIn
+        </a>
        </div>
     </section>
     <section>
-        <img src="imghtml.png" alt="Portfólio Samuel Neves">
+        <img src="assets/imghtml.png" alt="Portfólio Samuel Neves">
     </section>
     </main>
-    <footer></footer><!--rodapé da página-->
+    <footer>
+        <div class="rodape">
+            <h1>Desenvolvido por Samuel Neves</h1>
+        </div>
+    </footer><!--rodapé da página-->
+    </div>
 </body>
 </html>
 
