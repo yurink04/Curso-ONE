@@ -23,7 +23,6 @@
 body{ /*personalizaçao*/
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    height: 100%;
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -69,6 +68,11 @@ img{ /*formatação de imagem e estilização*/
     gap: 40px; /*espaçamento entre filhos*/
     
 }
+.apresentacao__conteudo__about{
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 0% 2% 0% 0%;
+}
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-titulo);
     font-weight: 400;
@@ -107,8 +111,11 @@ img{ /*formatação de imagem e estilização*/
 }
 .apresentacao__imagem{
     display: flex;
-    width: var(--size-geral);
-    flex-direction: center;
+    width: 100%;
+}
+.apresentacao__imagem__about{
+    display: flex;
+    width: 30%;
 }
 .rodape{
     text-align: center;
@@ -116,7 +123,7 @@ img{ /*formatação de imagem e estilização*/
     height: 1rem;
     font-family: var(--fonte-texto);
     font-weight: 100;
-    font-size: var(--size-texto);
+    font-size: 1rem;
     color: var(--cor-primaria);
     padding: var(--size-texto);
     background-color: var(--cor-terciaria);
@@ -128,5 +135,21 @@ img{ /*formatação de imagem e estilização*/
     }
     .apresentacao__conteudo{
         width: auto;
+        font-size: 1.2rem;
+    }
+    .apresentacao__links__subtitulo{
+        width: auto;
+        font-size: 1.8rem;
+    }
+    .apresentacao__links__navegacao{
+        width: 18rem;
+    }
+    .apresentacao__imagem{
+        width: 100%;
+    }
+    .rodape{
+        width: auto;
+        height: 0.4rem;
+        font-size: 0.6rem;
     }
 }
