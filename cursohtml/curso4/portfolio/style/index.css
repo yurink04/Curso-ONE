@@ -68,9 +68,7 @@ img{ /*formatação de imagem e estilização*/
     gap: 40px; /*espaçamento entre filhos*/
     
 }
-.apresentacao__conteudo__about{
 
-}
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-titulo);
     font-weight: 400;
