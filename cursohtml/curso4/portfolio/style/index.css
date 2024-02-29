@@ -69,9 +69,7 @@ img{ /*formatação de imagem e estilização*/
     
 }
 .apresentacao__conteudo__about{
-    width: 70%;
-    font-size: 1.3rem;
-    padding: 0% 2% 0% 0%;
+
 }
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-titulo);
@@ -115,7 +113,7 @@ img{ /*formatação de imagem e estilização*/
 }
 .apresentacao__imagem__about{
     display: flex;
-    width: 30%;
+    width: 50%;
 }
 .rodape{
     text-align: center;
@@ -146,6 +144,9 @@ img{ /*formatação de imagem e estilização*/
     }
     .apresentacao__imagem{
         width: 100%;
+    }
+    .apresentacao__imagem__about{
+        width: auto;
     }
     .rodape{
         width: auto;
