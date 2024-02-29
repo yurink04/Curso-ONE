@@ -1,5 +1,5 @@
 .cabecalho{
-    padding: 3% 0% 0% 15%;
+    padding: 3% 0% 1% 15%;
 }
 .cabecalho__menu{
     display: flex;
@@ -8,9 +8,9 @@
 .cabecalho__menu__link{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 27px;
+    font-size: 1.7rem;
     color: #38419D;
-    transition: 0.4s ease;
+    transition: all 0.4s ease;
     text-decoration: none;
 }
 .cabecalho__menu__link:hover{ 

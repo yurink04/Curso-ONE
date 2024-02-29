@@ -9,7 +9,11 @@
     --cor-hover: #1F2544;
     --cor-links-link: #38419D;
     --fonte-titulo: "Krona-One", sans-serif;
-    --fonte-texto: "Montserrat", sans-serif ;
+    --fonte-texto: "Montserrat", sans-serif;
+    --size-titulo: 2.35rem ;
+    --size-texto: 1.5rem;
+    --size-botao-logo: 23.8rem;
+    --size-logos: 2.3rem;
 }
 
 *{ /*rest css*/
@@ -19,7 +23,7 @@
 body{ /*personalizaçao*/
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    height: 100vh;
+    height: 100%;
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -38,11 +42,10 @@ body{ /*personalizaçao*/
 }
 img{ /*formatação de imagem e estilização*/
     box-sizing: border-box; 
-    width: 500px;
-    height: 500px;
+    
 }
 .apresentacao__titulo{
-    font-size: 39px;
+    font-size: var(--size-titulo);
     margin-bottom: 5%;
     font-family: var(--fonte-titulo);
     font-weight: 600;
@@ -57,7 +60,7 @@ img{ /*formatação de imagem e estilização*/
     justify-content: space-between;
     font-family: var(--fonte-texto);
     font-weight: 510;
-    font-size: 24px;
+    font-size: var(--size-texto);
     }
 .apresentacao__conteudo{ /*estilização e flexbox*/
     width: 1000px ;
@@ -69,7 +72,7 @@ img{ /*formatação de imagem e estilização*/
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-titulo);
     font-weight: 400;
-    font-size: 38px;
+    font-size: var(--size-titulo);
 }
 .apresentacao__links{ /*flexbox*/
     display: flex;
@@ -84,8 +87,8 @@ img{ /*formatação de imagem e estilização*/
     gap: 16px;
     background-color: var(--cor-primaria);
     border: 4px inset var(--cor-links-link); /* estilização das bordas */
-    width: 381px;
-    font-size: 24.5px;
+    width: var(--size-botao-logo);
+    font-size: var(--size-texto);
     font-weight: 600px;
     text-align: center;
     border-radius: 11px; /* raio de arredondamento da borda*/
@@ -93,7 +96,7 @@ img{ /*formatação de imagem e estilização*/
     text-decoration: none; /*retira o sublinhado do hiperlink*/
     color: var(--cor-secundaria);
     font-family: "Montserrat", sans-serif;
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
 
 }
 .apresentacao__links__link:hover{ 
@@ -103,17 +106,20 @@ img{ /*formatação de imagem e estilização*/
     
 }
 .apresentacao__links_link_logos{
-    width: 32px;
-    height: 32px;
+    width: var(--size-logos);
+    height: var(--size-logos);
+}
+.apresentacao__imagem{
+    width: 100%;
 }
 .rodape{
     text-align: center;
     width: 100%;
-    height: 2%;
+    height: 1rem;
     font-family: var(--fonte-texto);
     font-weight: 100;
-    font-size: 10px;
+    font-size: var(--size-texto);
     color: var(--cor-primaria);
-    padding: 28px;
+    padding: var(--size-texto);
     background-color: var(--cor-terciaria);
 }
