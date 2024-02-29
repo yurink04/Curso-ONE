@@ -53,16 +53,17 @@ img{ /*formatação de imagem e estilização*/
     color: var(--cor-terciaria);
 }
 .apresentacao{ /*flexbox e estilização*/
-    padding: 4% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
     font-family: var(--fonte-texto);
     font-weight: 510;
     font-size: var(--size-texto);
     }
 .apresentacao__conteudo{ /*estilização e flexbox*/
-    width: var(--size-geral) ;
+    width: var(--size-geral);
     display: flex;
     flex-direction: column;
     gap: 40px; /*espaçamento entre filhos*/
@@ -105,7 +106,9 @@ img{ /*formatação de imagem e estilização*/
     
 }
 .apresentacao__imagem{
+    display: flex;
     width: var(--size-geral);
+    flex-direction: center;
 }
 .rodape{
     text-align: center;
@@ -117,4 +120,13 @@ img{ /*formatação de imagem e estilização*/
     color: var(--cor-primaria);
     padding: var(--size-texto);
     background-color: var(--cor-terciaria);
+}
+@media (max-width: 1300px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
